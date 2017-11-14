@@ -1,12 +1,12 @@
 package me.bo0tzz.launchlibrary.models.type;
 
+import lombok.EqualsAndHashCode;
 import lombok.Value;
 
 @Value
-public class LaunchStatus {
+@EqualsAndHashCode(callSuper = true)
+public class LaunchStatus extends Type {
 
-    Integer id;
-    String name;
     String description;
 
 }
